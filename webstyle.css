@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.progress {
+    height: 6px;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 30vw;
+    }
+
+    50% {
+        width: 60vw;
+    }
+
+    75% {
+        width: 90vw;
+    }
+
+    99.9% {
+        width: 100vw;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.form-control1 {
+    background-color: rgba(80, 232, 104, 0.63);
+    width: 100%;
+
+}
+
+.title-control {
+    background-color: rgba(130, 219, 219, 0.726);
+    width: 100%;
+}
+
+.card-body h5 {
+    display: inline-block;
+}
+
+.cdchanged {
+    background-color: rgba(245, 222, 179, 0.63);
+}
+
+
+.fav {
+    width: 28px;
+    height: 2px;
+    padding: 0px;
+    align-content: flex-end;
+    background-color: #3bdd649a;
+    ;
+}
+
+.card-text {
+    font-family: 'Josefin Slab', serif;
+    font-size: 15px;
+}
+
+.titlec {
+    color: maroon;
+}
+
+.bro {
+    background-image: url("R.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgb(255 0 177);
+}
+
+.card {
+    background-image: url("pexels-bich-tran-636237.jpg");
+    opacity: 0.95;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    margin: .4em 0em 0.1em 0em;
+    padding: .3em .75em;
+    text-align: center;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(https://thumbs.dreamstime.com/z/watercolor-raster-summer-background-grass-gradient-yellow-green-streaks-smooth-lines-cover-layout-design-148910602.jpg);
+}
+
+.clip-text:before {
+    content: ”;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    position: absolute;
+}
+
+.clip-text:after {
+    content: ”;
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+.alert {
+    animation: fadeOut 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    12.5% {
+        opacity: 0.875;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    37.5% {
+        opacity: 0.625;
+    }
+
+    50% {
+        opacity: 0.50;
+    }
+
+    62.5% {
+        opacity: 0.375;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    87.5% {
+        opacity: 0.125;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    95% {
+        opacity: 0.05;
+    }
+
+    99% {
+        opacity: 0.01;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinks{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+
+}
+
+.contain{
+    font-family:'Montserrat',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color:#ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    padding: 0 3rem;
+   
+}
+
+.h1style{
+    font-weight: 200;
+    margin: 0.4rem;
+    font-size: 2 rem;
+    color: #ffbd2f;
+}
+
+/*cursor*/
+.txt-type > .txt{
+    /* border-right:0.2rem solid; */
+    padding-right: 0.5rem;
+    color: white;
+}
+
+@media(min-width:1200px){
+    .h1style{
+        font-size: 2.3rem;
+    }
+}
+@media(max-width:800px){
+    .contain{
+        padding: 0 1rem;
+    }
+    .h1style{
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:500px){
+    .h1style{
+        font-size: 1.8rem;
+    }
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:black url('Neon-Loading-gif.gif') no-repeat center;
+    z-index:99999;
+}
+
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+#pic{
+    width: 13rem;
+}
+
+#mybar{
+    
+    min-width: 5rem;
+    background-color:green; 
+    height:1rem;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    color: chartreuse;
+
+}
